@@ -15,7 +15,7 @@ export default function Gracias() {
         <meta name="description" content="Gracias por descargar el dosier de LabnoLab - En clave de IA" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
       </Head>
       
       <div className="thanks-container">
@@ -27,32 +27,34 @@ export default function Gracias() {
           <div className="thanks-message">
             <h1>¡Gracias!</h1>
             <div className="thanks-icon">
-              <img src="/web-images/Smile LnL.png" alt="Smile LabnoLab" />
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" fill="#cdff07" stroke="#000000" strokeWidth="6"/>
+                <circle cx="45" cy="45" r="8" fill="#000000"/>
+                <circle cx="75" cy="45" r="8" fill="#000000"/>
+                <path d="M40 75 Q60 95 80 75" stroke="#000000" strokeWidth="6" strokeLinecap="round" fill="none"/>
+              </svg>
             </div>
             <h2>Aquí puedes consultar el dossier</h2>
           </div>
 
           <div className="thanks-actions">
-            <a href="https://www.canva.com/design/DAGkUx9SHiw/_ArJAngHQjixmadWG5J8Cg/view?utm_content=DAGkUx9SHiw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he7303be4bb" target="_blank" className="btn-primary">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2L3 7L12 12L21 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M3 17L12 22L21 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M3 12L12 17L21 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <a href="https://www.canva.com/design/DAGkUx9SHiw/_ArJAngHQjixmadWG5J8Cg/view?utm_content=DAGkUx9SHiw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he7303be4bb" target="_blank" className="course-btn">
+              <svg aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7 24 24 24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path>
               </svg>
-              Ver dossier
+              VER DOSSIER
             </a>
-            <button className="btn-secondary" onClick={handleGoHome}>
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <button className="course-btn" onClick={handleGoHome}>
+              <svg aria-hidden="true" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32.1-14-32.1-32s14.1-32 32.1-32l64-64c48-48 112-80 176-80s128 32 176 80l64 64c18 0 32 14 32 32.1zM256 288c17.7 0 32-14.3 32-32s-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32z"></path>
               </svg>
-              Volver a la Home
+              VOLVER A LA HOME
             </button>
-            <a href="https://wa.me/34615877069" target="_blank" className="btn-whatsapp">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.472 14.382C17.367 14.382 17.261 14.411 17.178 14.470C16.998 14.587 16.847 14.734 16.734 14.905C16.608 15.094 16.537 15.312 16.537 15.537C16.537 15.762 16.608 15.980 16.734 16.169C16.847 16.340 16.998 16.487 17.178 16.604C17.261 16.663 17.367 16.692 17.472 16.692C17.577 16.692 17.683 16.663 17.766 16.604C17.946 16.487 18.097 16.340 18.210 16.169C18.336 15.980 18.407 15.762 18.407 15.537C18.407 15.312 18.336 15.094 18.210 14.905C18.097 14.734 17.946 14.587 17.766 14.470C17.683 14.411 17.577 14.382 17.472 14.382Z" fill="currentColor"/>
-                <path d="M12 2C6.48 2 2 6.48 2 12C2 13.89 2.525 15.66 3.438 17.168L2.546 20.2C2.49 20.374 2.49 20.559 2.546 20.733C2.602 20.907 2.711 21.059 2.857 21.169C2.952 21.24 3.063 21.282 3.177 21.291C3.291 21.3 3.405 21.276 3.508 21.223L6.832 19.562C8.34 20.475 10.11 21 12 21C17.52 21 22 16.52 22 12C22 6.48 17.52 2 12 2ZM12 19C10.33 19 8.77 18.5 7.45 17.6L7.12 17.4L4.55 18.55L5.7 16.12L5.5 15.79C4.6 14.47 4.1 12.91 4.1 11.24C4.1 7.69 6.89 4.9 10.44 4.9C12.13 4.9 13.71 5.56 14.93 6.78C16.15 8 16.81 9.58 16.81 11.27C16.81 14.82 14.02 17.61 10.47 17.61C9.85 17.61 9.25 17.5 8.68 17.29L8.4 17.17L6.25 17.95L7.03 15.8L6.91 15.52C6.7 14.95 6.59 14.35 6.59 13.73C6.59 11.24 8.58 9.25 11.07 9.25C12.27 9.25 13.4 9.72 14.24 10.56C15.08 11.4 15.55 12.53 15.55 13.73C15.55 16.22 13.56 18.21 11.07 18.21Z" fill="currentColor"/>
+            <a href="https://wa.me/34615877069" target="_blank" className="course-btn">
+              <svg aria-hidden="true" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
               </svg>
-              Contáctanos por WhatsApp
+              CONTÁCTANOS POR WHATSAPP
             </a>
           </div>
         </div>
@@ -66,7 +68,7 @@ export default function Gracias() {
           align-items: center;
           justify-content: center;
           padding: 20px;
-          font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+          font-family: var(--font-open-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         }
 
         .thanks-content {
@@ -76,7 +78,7 @@ export default function Gracias() {
           max-width: 500px;
           width: 100%;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-          border: 3px solid #111;
+          border: 3px solid #000000;
           overflow: hidden;
         }
 
@@ -87,7 +89,7 @@ export default function Gracias() {
         }
 
         .logo {
-          font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+          font-family: var(--font-open-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
           font-weight: 800;
           font-size: 2rem;
           color: #cdff07;
@@ -100,7 +102,7 @@ export default function Gracias() {
         }
 
         .thanks-message h1 {
-          font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+          font-family: var(--font-open-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
           font-weight: 800;
           font-size: 3.5rem;
           color: #cdff07;
@@ -116,42 +118,21 @@ export default function Gracias() {
           align-items: center;
         }
 
-        .thanks-icon img {
+        .thanks-icon svg {
           width: 100px;
           height: 100px;
-          object-fit: contain;
         }
 
         .thanks-message h2 {
-          font-family: 'Montserrat', Arial, sans-serif;
+          font-family: var(--font-open-sans), Arial, sans-serif;
           font-weight: 700;
           font-size: 1.4rem;
-          color: #D5FF00;
+          color: #cdff07;
           margin: 20px 0 15px 0;
           letter-spacing: -1px;
         }
 
-        .thanks-message p {
-          font-size: 1rem;
-          color: #666;
-          line-height: 1.6;
-          margin: 0;
-          letter-spacing: -0.5px;
-        }
 
-        .thanks-message a {
-          color: #111;
-          text-decoration: underline;
-          font-weight: 600;
-        }
-
-        .thanks-message a:hover {
-          color: #D5FF00;
-          background: #111;
-          padding: 2px 6px;
-          border-radius: 4px;
-          text-decoration: none;
-        }
 
         .thanks-actions {
           padding: 0 30px 40px;
@@ -161,66 +142,47 @@ export default function Gracias() {
           align-items: center;
         }
 
-        .btn-primary, .btn-secondary, .btn-whatsapp {
-          padding: 18px 30px;
-          border-radius: 0;
-          font-family: 'Montserrat', Arial, sans-serif;
+        .course-btn {
+          font-family: var(--font-open-sans), Arial, sans-serif;
           font-weight: 700;
-          font-size: 1rem;
-          text-decoration: none;
-          display: inline-flex;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 15px;
-          transition: all 0.3s ease;
-          border: 3px solid transparent;
+          font-size: 1.1rem;
+          border-radius: 0px;
+          padding: 18px 24px;
           cursor: pointer;
-          letter-spacing: -0.5px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          transition: all 0.2s;
+          text-decoration: none;
+          margin: 0;
+          letter-spacing: -1px;
+          box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+          border: 3px solid #cdff07;
+          background: #000000;
+          color: #cdff07;
+          text-transform: uppercase;
           width: 100%;
           max-width: 350px;
-          text-transform: uppercase;
+          justify-content: flex-start;
         }
 
-        .btn-primary {
-          background: #D5FF00;
-          color: #111;
-          border-color: transparent;
+        .course-btn:hover {
+          background: #cdff07;
+          color: #000000;
+          border: 3px solid #cdff07;
+          text-decoration: none;
         }
 
-        .btn-primary:hover {
-          background: #D5FF00;
-          color: #111;
-          border-color: transparent;
-        }
-
-        .btn-secondary {
-          background: #111;
-          color: #D5FF00;
-          border-color: #D5FF00;
-        }
-
-        .btn-secondary:hover {
-          background: #111;
-          color: #D5FF00;
-          border-color: #D5FF00;
-        }
-
-        .btn-whatsapp {
-          background: #111;
-          color: #D5FF00;
-          border-color: #D5FF00;
-        }
-
-        .btn-whatsapp:hover {
-          background: #111;
-          color: #D5FF00;
-          border-color: #D5FF00;
-        }
-
-        .btn-primary svg, .btn-secondary svg, .btn-whatsapp svg {
-          width: 24px;
-          height: 24px;
+        .course-btn svg {
+          width: 26px;
+          height: 26px;
+          fill: #cdff07;
+          transition: fill 0.2s;
           flex-shrink: 0;
+        }
+
+        .course-btn:hover svg {
+          fill: #000000;
         }
 
         @media (max-width: 768px) {
@@ -253,7 +215,7 @@ export default function Gracias() {
             font-size: 1.2rem;
           }
 
-          .thanks-icon img {
+          .thanks-icon svg {
             width: 80px;
             height: 80px;
           }
@@ -262,7 +224,7 @@ export default function Gracias() {
             padding: 0 20px 30px;
           }
 
-          .btn-primary, .btn-secondary, .btn-whatsapp {
+          .course-btn {
             padding: 15px 20px;
             font-size: 0.9rem;
             max-width: 100%;

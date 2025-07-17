@@ -66,7 +66,7 @@ export default function Home() {
 
   const handleApuntateModalClose = () => {
     setShowApuntateModal(false);
-    router.push('/gracias');
+    // Mantener en la home al cerrar el modal de "Apúntate"
   };
 
   const handleContactModalClose = () => {
@@ -92,7 +92,7 @@ export default function Home() {
         <meta name="description" content="Eficiencia, productividad y automatización con IA para potenciar personas, creatividad e impacto." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -326,9 +326,6 @@ export default function Home() {
                   title="Formulario de descarga del dosier"
                 />
               </div>
-              <div className="modal-footer">
-                <p>Una vez completado el formulario, la descarga comenzará automáticamente.</p>
-              </div>
             </div>
           </div>
         )}
@@ -354,9 +351,6 @@ export default function Home() {
                   }}
                   title="Formulario de inscripción al curso"
                 />
-              </div>
-              <div className="modal-footer">
-                <p>Completa el formulario para inscribirte en el curso "En clave de IA".</p>
               </div>
             </div>
           </div>

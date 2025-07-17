@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={openSans.variable}>
+    <main className={`${openSans.variable} ${openSans.className}`}>
       <Component {...pageProps} />
     </main>
   );
