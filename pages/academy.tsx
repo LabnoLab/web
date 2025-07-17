@@ -508,12 +508,12 @@ export default function Academy() {
         .sidebar-methodology {
           position: fixed;
           left: 0;
-          top: 0;
+          top: 90px;
           width: 200px;
-          height: 100vh;
+          height: calc(100vh - 90px);
           background: #000000;
           padding: 30px 20px;
-          z-index: 1000;
+          z-index: 999;
           overflow-y: auto;
           opacity: 0;
           visibility: hidden;
