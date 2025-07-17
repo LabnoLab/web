@@ -68,7 +68,7 @@ export default function Gracias() {
           align-items: center;
           justify-content: center;
           padding: 20px;
-          font-family: var(--font-open-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+          font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         }
 
         .thanks-content {
@@ -89,7 +89,7 @@ export default function Gracias() {
         }
 
         .logo {
-          font-family: var(--font-open-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+          font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
           font-weight: 800;
           font-size: 2rem;
           color: #cdff07;
@@ -102,7 +102,7 @@ export default function Gracias() {
         }
 
         .thanks-message h1 {
-          font-family: var(--font-open-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+          font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
           font-weight: 800;
           font-size: 3.5rem;
           color: #cdff07;
@@ -124,7 +124,7 @@ export default function Gracias() {
         }
 
         .thanks-message h2 {
-          font-family: var(--font-open-sans), Arial, sans-serif;
+          font-family: 'Montserrat', Arial, sans-serif;
           font-weight: 700;
           font-size: 1.4rem;
           color: #cdff07;
@@ -143,7 +143,7 @@ export default function Gracias() {
         }
 
         .course-btn {
-          font-family: var(--font-open-sans), Arial, sans-serif;
+          font-family: 'Montserrat', Arial, sans-serif;
           font-weight: 700;
           font-size: 1.1rem;
           border-radius: 0px;

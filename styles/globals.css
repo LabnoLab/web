@@ -1,3 +1,52 @@
+/* Montserrat Font Configuration */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,7 +68,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 300;
   background: #cdff07;
   color: #000000;
@@ -56,7 +105,7 @@ a:hover {
 .container {
   width: 100%;
   margin: 0;
-  padding-top: 90px;
+  padding-top: 0;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -102,7 +151,7 @@ a:hover {
   gap: 0;
 }
 .menu a {
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   color: #000000;
@@ -129,7 +178,7 @@ a:hover {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
   margin: 0 0 0.5em 0;
   letter-spacing: -1.5px;
@@ -137,7 +186,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 5.2rem;
+  font-size: 4.5rem;
   font-weight: 800;
   line-height: 0.92;
   letter-spacing: -1.5px;
@@ -169,7 +218,7 @@ strong {
 .btn {
   background: #000000;
   color: #fff;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   border: none;
@@ -224,14 +273,21 @@ svg {
   fill: #fff;
 }
 
+
+
 .section {
   background: #D5FF00;
   padding: 0;
   display: flex;
   flex-direction: row;
   gap: 0;
-  border-bottom: 6px solid #111;
+  border-bottom: 6px solid #000000;
   min-height: 400px;
+}
+
+.first-section {
+  padding: 90px 0 40px 0;
+  min-height: 500px;
 }
 
 .section:last-child {
@@ -256,6 +312,8 @@ svg {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
+  padding: 0;
 }
 
 .banner {
@@ -334,10 +392,31 @@ iframe {
   }
 
   .container {
-    padding-top: 140px;
+    padding-top: 0;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+  }
+
+  .section, .section.reverse, .first-section {
+    padding: 140px 0 20px 0;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .section-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .section-image {
+    min-height: 300px;
+  }
+
+  .slider-container {
+    width: 100%;
+    height: 300px;
   }
 
   h1 {
@@ -428,7 +507,7 @@ iframe {
   font-weight: 700;
   color: #000000;
   margin: 0 0 12px 0;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.2;
   letter-spacing: -1px;
 }
@@ -442,7 +521,7 @@ iframe {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   letter-spacing: -0.5px;
 }
 
@@ -466,12 +545,12 @@ iframe {
 
 .marquee-content {
   display: inline-block;
-  animation: marquee 30s linear infinite;
-  font-size: 4.2rem;
+  animation: marquee 20s linear infinite;
+  font-size: 4.5rem;
   font-weight: 800;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-style: italic;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
   line-height: 0.92;
   text-transform: uppercase;
   width: max-content;
@@ -489,10 +568,10 @@ iframe {
   }
   .marquee-content {
     font-size: 2.2rem;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   h2 {
     font-size: 1.7rem;
@@ -531,7 +610,7 @@ iframe {
   border-radius: 0px;
   display: inline-block;
   width: fit-content;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -542,7 +621,7 @@ iframe {
   margin: 0 0 30px 0;
   color: #000000;
   letter-spacing: -2px;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -568,7 +647,7 @@ iframe {
   color: #cdff07;
   line-height: 0.95;
   margin-bottom: 5px;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   letter-spacing: -1px;
 }
 
@@ -576,7 +655,7 @@ iframe {
   font-size: 0.9rem;
   font-weight: 700;
   color: #cdff07;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   letter-spacing: -0.5px;
 }
 
@@ -596,7 +675,7 @@ iframe {
   line-height: 1.4;
   margin: 0 0 20px 0;
   color: #cdff07;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   letter-spacing: -0.5px;
 }
 
@@ -613,7 +692,7 @@ iframe {
 }
 
 .course-btn {
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
   border-radius: 0px;
@@ -868,15 +947,15 @@ iframe {
   justify-content: space-between;
   align-items: center;
   padding: 25px 30px;
-  background: #D5FF00;
-  border-bottom: 3px solid #111;
+  background: #000000;
+  border-bottom: 3px solid #000000;
 }
 
 .modal-header h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #111;
+  color: #cdff07;
   margin: 0;
   letter-spacing: -1px;
 }
@@ -886,7 +965,7 @@ iframe {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #111;
+  color: #cdff07;
   padding: 5px;
   border-radius: 50%;
   width: 35px;
@@ -898,8 +977,8 @@ iframe {
 }
 
 .modal-close:hover {
-  background: #111;
-  color: #D5FF00;
+  background: #cdff07;
+  color: #000000;
 }
 
 .typeform-container {
@@ -951,11 +1030,12 @@ iframe {
 
 /* Slider Styles */
 .slider-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border-radius: 8px;
 }
 
 .slider-image {
@@ -965,9 +1045,9 @@ iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
-  border-radius: 8px;
 }
 
 .slider-image.active {
@@ -993,7 +1073,7 @@ iframe {
   border: 2px solid #cdff07;
   padding: 15px 25px;
   border-radius: 8px;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   cursor: pointer;
@@ -1071,7 +1151,7 @@ iframe {
   border: 2px solid #cdff07;
   padding: 15px 25px;
   border-radius: 8px;
-  font-family: var(--font-open-sans), Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   cursor: pointer;

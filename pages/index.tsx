@@ -122,7 +122,7 @@ export default function Home() {
       </header>
       <div className="container">
         {/* 1. Laboratorio de Inteligencia Creativa */}
-        <section className="section fade-in">
+        <section className="section first-section fade-in">
           <div className="section-content">
             <h1>LABORATORIO DE INTELIGENCIA CREATIVA</h1>
             <p>
@@ -255,6 +255,9 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Cinta duplicada antes del footer */}
+        <div className="marquee"><span className="marquee-content">(PERSONAS + CREATIVIDAD + IMPACTO)^IA = INTELIGENCIA CREATIVA</span></div>
+
         {/* 9. Footer */}
         <footer className="footer">
           <div className="footer-grid">
@@ -309,7 +312,7 @@ export default function Home() {
           <div className="modal-overlay" onClick={handleModalClose}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
               <div className="modal-header">
-                <h3>Descarga el Dosier Completo</h3>
+                <h3>Deja tus datos para acceder al dossier completo</h3>
                 <button className="modal-close" onClick={handleModalClose}>
                   ✕
                 </button>
