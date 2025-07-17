@@ -1,16 +1,16 @@
 import "../styles/globals.css";
-import { Montserrat } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import type { AppProps } from "next/app";
 
-const montserrat = Montserrat({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
-  variable: "--font-montserrat"
+  weight: ["300", "400", "600", "700", "800"],
+  variable: "--font-open-sans"
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={montserrat.variable}>
+    <main className={openSans.variable}>
       <Component {...pageProps} />
     </main>
   );

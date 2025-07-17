@@ -19,10 +19,10 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
-  background: #D5FF00;
-  color: #111;
+  background: #cdff07;
+  color: #000000;
   letter-spacing: -1px;
   line-height: 1.4;
 }
@@ -63,15 +63,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border: 6px solid #111;
-  background: #D5FF00;
+  border: 6px solid #000000;
+  background: #cdff07;
   overflow: hidden;
 }
 
 .header {
   width: 100%;
-  background: #111;
-  border: 6px solid #111;
+  background: #000000;
+  border: 6px solid #000000;
   border-bottom: none;
   display: flex;
   align-items: center;
@@ -85,15 +85,16 @@ a:hover {
 }
 
 .logo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -2px;
-  line-height: 0.95;
-  color: #D5FF00;
-  background: transparent;
-  padding: 0.2em 0.5em;
-  border-radius: 4px;
-  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 75px; /* Logo más grande */
+  margin-top: -5px; /* Un poco más arriba */
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .menu {
@@ -101,12 +102,12 @@ a:hover {
   gap: 0;
 }
 .menu a {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #111;
+  color: #000000;
   background: #D5FF00;
-  border: 6px solid #111;
+  border: 6px solid #000000;
   border-left: none;
   padding: 1.1em 2.2em;
   text-align: center;
@@ -119,16 +120,16 @@ a:hover {
   letter-spacing: -1px;
 }
 .menu a:first-child {
-  border-left: 6px solid #111;
+  border-left: 6px solid #000000;
 }
 .menu a:hover {
-  background: #111;
+  background: #000000;
   color: #D5FF00;
   transform: translateY(-2px);
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 800;
   margin: 0 0 0.5em 0;
   letter-spacing: -1.5px;
@@ -166,9 +167,9 @@ strong {
   margin: 24px 0 0 0;
 }
 .btn {
-  background: #111;
+  background: #000000;
   color: #fff;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   border: none;
@@ -183,9 +184,9 @@ strong {
   letter-spacing: -1px;
 }
 .btn:hover {
-  background: #D5FF00;
-  color: #111;
-  border: 2px solid #111;
+  background: #cdff07;
+  color: #000000;
+  border: 2px solid #000000;
   transform: translateY(-4px) scale(1.06);
   box-shadow: 0 8px 24px rgba(0,0,0,0.22);
 }
@@ -369,29 +370,29 @@ iframe {
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  gap: 0;
   padding: 0;
-  background: #D5FF00;
-  border-bottom: 6px solid #111;
+  background: #cdff07;
+  border-bottom: 6px solid #000000;
 }
 
 @media (max-width: 900px) {
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 6px;
+    gap: 0;
     padding: 0;
   }
 }
 
 .service-box {
-  background: #D5FF00;
-  border: 6px solid #111;
+  background: #cdff07;
+  border: 6px solid #000000;
   padding: 0;
   text-align: left;
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 450px;
   overflow: hidden;
 }
 
@@ -401,7 +402,7 @@ iframe {
 
 .service-box img {
   width: 100%;
-  height: 175px;
+  height: 250px;
   object-fit: cover;
   border-radius: 0;
   margin: 0;
@@ -416,7 +417,7 @@ iframe {
 
 .service-content {
   padding: 20px;
-  height: 175px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -425,9 +426,9 @@ iframe {
 .service-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #111;
+  color: #000000;
   margin: 0 0 12px 0;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   line-height: 1.2;
   letter-spacing: -1px;
 }
@@ -436,23 +437,28 @@ iframe {
   font-size: 0.95rem;
   font-weight: 300;
   line-height: 1.4;
-  color: #111;
+  color: #000000;
   text-align: left;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   letter-spacing: -0.5px;
 }
 
+.service-desc strong {
+  color: #000000;
+  font-weight: 700;
+}
+
 .marquee {
-  background: #111;
+  background: #000000;
   color: #fff;
   padding: 8px 0 6px 0;
   white-space: nowrap;
   overflow: hidden;
   position: relative;
-  border-bottom: 6px solid #111;
+  border-bottom: 6px solid #000000;
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -460,20 +466,20 @@ iframe {
 
 .marquee-content {
   display: inline-block;
-  padding-left: 100%;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
   font-size: 4.2rem;
   font-weight: 800;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-style: italic;
   letter-spacing: -2px;
   line-height: 0.92;
   text-transform: uppercase;
+  width: max-content;
 }
 
 @keyframes marquee {
-  0% { transform: translate3d(100%, 0, 0); }
-  100% { transform: translate3d(-100%, 0, 0); }
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
 }
 
 @media (max-width: 900px) {
@@ -495,13 +501,13 @@ iframe {
 
 /* Course Section Styles */
 .course-section {
-  background: #111;
+  background: #000000;
   color: #fff;
   padding: 0;
   display: flex;
   flex-direction: row;
   min-height: 400px;
-  border-bottom: 6px solid #111;
+  border-bottom: 6px solid #000000;
 }
 
 .course-header {
@@ -519,24 +525,25 @@ iframe {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 0 20px 0;
-  background: #111;
-  color: #D5FF00;
+  background: #000000;
+  color: #cdff07;
   padding: 8px 16px;
   border-radius: 0px;
   display: inline-block;
   width: fit-content;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   letter-spacing: -1px;
 }
 
 .course-title {
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 0.95;
   margin: 0 0 30px 0;
-  color: #111;
+  color: #000000;
   letter-spacing: -2px;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 /* Contador dentro del curso */
@@ -549,8 +556,8 @@ iframe {
 }
 
 .countdown-item {
-  background: #111;
-  border: 2px solid #111;
+  background: #000000;
+  border: 2px solid #000000;
   padding: 15px 10px;
   text-align: center;
 }
@@ -558,23 +565,23 @@ iframe {
 .countdown-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #D5FF00;
+  color: #cdff07;
   line-height: 0.95;
   margin-bottom: 5px;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   letter-spacing: -1px;
 }
 
 .countdown-label {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #D5FF00;
-  font-family: 'Montserrat', Arial, sans-serif;
+  color: #cdff07;
+  font-family: 'Open Sans', Arial, sans-serif;
   letter-spacing: -0.5px;
 }
 
 .course-content {
-  background: #111;
+  background: #000000;
   color: #fff;
   padding: 40px;
   flex: 1;
@@ -588,9 +595,14 @@ iframe {
   font-weight: 300;
   line-height: 1.4;
   margin: 0 0 20px 0;
-  color: #fff;
-  font-family: 'Montserrat', Arial, sans-serif;
+  color: #cdff07;
+  font-family: 'Open Sans', Arial, sans-serif;
   letter-spacing: -0.5px;
+}
+
+.course-description strong {
+  color: #cdff07;
+  font-weight: 700;
 }
 
 .course-buttons {
@@ -601,7 +613,7 @@ iframe {
 }
 
 .course-btn {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.3rem;
   border-radius: 0px;
@@ -615,54 +627,59 @@ iframe {
   margin: 0;
   letter-spacing: -1px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.13);
-  border: 3px solid #111;
+  border: 3px solid #cdff07;
+  background: #000000;
+  color: #cdff07;
+  text-transform: uppercase;
 }
 
 .course-btn svg {
   width: 26px;
   height: 26px;
-  fill: #111;
+  fill: #cdff07;
   transition: fill 0.2s;
 }
 
 .course-btn.primary {
-  background: #D5FF00;
-  color: #111;
-  border: 3px solid #111;
+  background: #000000;
+  color: #cdff07;
+  border: 3px solid #cdff07;
 }
 
 .course-btn.primary svg {
-  fill: #111;
+  fill: #cdff07;
 }
 
 .course-btn.primary:hover {
-  background: #111;
-  color: #D5FF00;
-  border: 3px solid #D5FF00;
+  background: #cdff07;
+  color: #000000;
+  border: 3px solid #cdff07;
+  text-decoration: none;
 }
 
 .course-btn.primary:hover svg {
-  fill: #D5FF00;
+  fill: #000000;
 }
 
 .course-btn.secondary {
-  background: #111;
-  color: #D5FF00;
-  border: 3px solid #D5FF00;
+  background: #000000;
+  color: #cdff07;
+  border: 3px solid #cdff07;
 }
 
 .course-btn.secondary svg {
-  fill: #D5FF00;
+  fill: #cdff07;
 }
 
 .course-btn.secondary:hover {
-  background: #D5FF00;
-  color: #111;
-  border: 3px solid #111;
+  background: #cdff07;
+  color: #000000;
+  border: 3px solid #cdff07;
+  text-decoration: none;
 }
 
 .course-btn.secondary:hover svg {
-  fill: #111;
+  fill: #000000;
 }
 
 @media (max-width: 900px) {
@@ -818,4 +835,255 @@ iframe {
   .footer-item:last-child {
     border-bottom: none;
   }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  background: #D5FF00;
+  border-bottom: 3px solid #111;
+}
+
+.modal-header h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #111;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #111;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #111;
+  color: #D5FF00;
+}
+
+.typeform-container {
+  padding: 0;
+  background: #fff;
+}
+
+.modal-footer {
+  padding: 20px 30px;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  text-align: center;
+}
+
+.modal-footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .modal-overlay {
+    padding: 15px;
+  }
+  
+  .modal-content {
+    max-width: 100%;
+    max-height: 95vh;
+  }
+  
+  .modal-header {
+    padding: 20px;
+  }
+  
+  .modal-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .modal-footer {
+    padding: 15px 20px;
+  }
+  
+  .typeform-container iframe {
+    height: 450px !important;
+  }
+}
+
+/* Slider Styles */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  border-radius: 8px;
+}
+
+.slider-image.active {
+  opacity: 1;
+}
+
+/* Contact Modal Styles */
+.contact-modal {
+  max-width: 600px;
+  padding: 0;
+}
+
+.contact-buttons {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-btn {
+  background: #000000;
+  color: #cdff07;
+  border: 2px solid #cdff07;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.contact-btn:hover {
+  background: #cdff07;
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.ai-assistant-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.ai-text {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: center;
+  font-style: italic;
+}
+
+.ai-btn {
+  background: #000000;
+  color: #cdff07;
+  border: 2px solid #cdff07;
+}
+
+.ai-btn:hover {
+  background: #cdff07;
+  color: #000000;
+}
+
+@media (max-width: 900px) {
+  .contact-modal {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+  
+  .contact-buttons {
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .contact-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+  
+  .ai-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Button styles update for smooth transition */
+.btn {
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #cdff07;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn:hover {
+  background: #cdff07;
+  color: #000000;
+  text-decoration: none;
 }
